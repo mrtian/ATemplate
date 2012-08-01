@@ -1,4 +1,4 @@
-ache = {},
+ var  cache = {},
      _helpers = {},
      _plugins={},
      _isNewEngine = ''.trim;
