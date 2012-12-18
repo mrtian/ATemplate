@@ -1,9 +1,7 @@
-##模板核心代码主要来源于artTemplete的实现  
-##增加了支持模板插件的方法  
 ####使用:  
 Javascript:   
 
-var templete = require('templte');
+var template = require('template');
 
 ####增加一个模板插件方法
 ```
@@ -30,5 +28,7 @@ HTML:
 <%=title|encode:"js"%>  
 ```
 #####template.js中已经提供了常用的几种插件：truncate,decode,encode,replace,default，您可以按自己的需求重写或者删除
+
+#####模板核心代码主要来源于artTemplate的实现 ,这个只是在artTemplateh 增加了支持模板插件的方法 ，感谢artTemplate的开发人员提供如此优秀的模板引擎
 
 ####Enjoy it.  
