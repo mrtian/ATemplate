@@ -5,6 +5,8 @@ Javascript:
 
 var templete = require('templte');
 
+####增加一个模板插件方法
+```
 templete.plugin('truncate',function(str,num,buf){   
     buf = buf||'...';   
     if(str.length>num){   
@@ -17,9 +19,13 @@ templete.plugin('truncate',function(str,num,buf){
 templete.plugin('encode',function(str,type){
 //do encode
 }); 
+```
 
-HTML: 
+####在模板中使用插件
+#####如果您使用过smarty，这里的使用跟smarty中是一样的
+HTML:
+``` 
 <%=title|truncate:15|encode:"html"%>    
 <%=title|encode:"js"%>  
-
+```
 Enjoy it.  
